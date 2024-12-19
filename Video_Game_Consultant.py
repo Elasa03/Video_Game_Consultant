@@ -6,7 +6,7 @@
 import streamlit as st
 import openai
 import os
-from openai.error import OpenAIError
+
 
 # Setting up OpenAI API Key securely using Streamlit Secrets
 openai.api_key = st.secrets["OPENAI_API_KEY"]
@@ -88,8 +88,6 @@ if st.sidebar.button('Generate Recommendations'):
             # Displaying Recommendations
             st.subheader("Your Recommendations 🎉")
             st.markdown(recommendations)
-        
-        except openai.error.OpenAIError as e:
-            st.error(f"An error occurred while fetching recommendations: {e}")
+
         except Exception as e:
             st.error(f"An unexpected error occurred: {e}")
