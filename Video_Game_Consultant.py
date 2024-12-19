@@ -1,12 +1,10 @@
 #################################
-## Simplified Video Game Recommender ##
+## Video Game Recommender ##
 #################################
 
 # Importing Libraries
 import streamlit as st
 import openai
-import os
-
 
 # Setting up OpenAI API Key securely using Streamlit Secrets
 openai.api_key = st.secrets["OPENAI_API_KEY"]
@@ -72,7 +70,7 @@ if st.sidebar.button('Generate Recommendations'):
                 f"Include a brief description of why each game fits these criteria."
             )
             
-            # Interacting with OpenAI's API
+            # Interacting with OpenAI's API using the new ChatCompletion method
             response = openai.ChatCompletion.create(
                 model="gpt-4",
                 messages=[
@@ -83,7 +81,8 @@ if st.sidebar.button('Generate Recommendations'):
                 temperature=0.7,
             )
             
-            recommendations = response.choices[0].message.content
+            # Extracting recommendations from the response
+            recommendations = response['choices'][0]['message']['content']
             
             # Displaying Recommendations
             st.subheader("Your Recommendations 🎉")
