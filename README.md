@@ -27,7 +27,7 @@ The **Video Game Recommendor** app is an interactive tool designed to provide pe
 - **Dynamic Query Crafting:** The app constructs a detailed query to ensure relevant and engaging results.
 
 ---
-### ** For The Future **
+### For The Future
 It would be extremely interesting to update the Video_Game_Consultant code by adding a video game database with knowledge of all video games. With this addition, the app could recommend modern-day games, making it more useful. Also This project has given me many ideas of the posibilities of GPT. I could create an app like this for many things like cars, houses and even vacations.
 
 note: The APP name is vide Video Game Recommendor, The code name is video_game_Consultan
