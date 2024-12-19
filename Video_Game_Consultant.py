@@ -6,6 +6,7 @@
 import streamlit as st
 import openai
 import os
+from openai.error import OpenAIError
 
 # Setting up OpenAI API Key securely using Streamlit Secrets
 openai.api_key = st.secrets["OPENAI_API_KEY"]
