@@ -1,4 +1,4 @@
-# **Video Game Consultant** 🎮
+# **Video Game Recommendor** 🎮
 
 [**Streamlit App**](https://videogameconsultant-tvb74vkssr9cm8tvos5s4h.streamlit.app/)
 
@@ -26,6 +26,7 @@ The **Video Game Recommendor** app is an interactive tool designed to provide pe
 - **OpenAI's GPT-4:** Generates personalized game recommendations based on user inputs.
 - **Dynamic Query Crafting:** The app constructs a detailed query to ensure relevant and engaging results.
 
+note: The APP name is vide Video Game Recommendor, The code name is video_game_Consultan
 ---
 
 ### ** For The Future **
