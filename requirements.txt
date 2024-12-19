@@ -1,2 +1,2 @@
 streamlit
-openai
+sopenai==0.28.0
